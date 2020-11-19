@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>배경 이미지</title>
+  <style>
+    div{
+      width:500px;
+      height:500px;
+      border:2px double black;
+			margin-bottom:20px;
+    }
+    .bg1{
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:auto;
+    }
+    .bg2 {
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:200px 150px;
+    }
+    .bg3 {
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:60% 40%;
+    }
+
+    /* contain : 비율 유지 후 가장 큰 값에 맞춰 배치 (빈 공간이 나타날 수 있음)*/
+    .bg4 {
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:contain;
+    }
+
+    /* cover : contain처럼 비율 유지 후 가로 세로 중 작은 값에 맞춰 배치 (그림이 짤릴 수 있음) */
+     .bg5 {
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:cover;
+    }
+    .bg6{
+      background:url('05_images/bg4.jpg') no-repeat left top;
+      background-size:100% 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg1"></div>
+	<div class="bg2"></div>
+	<div class="bg3"></div>
+	<div class="bg4"></div>
+	<div class="bg5"></div>
+	<div class="bg6"></div>
+ </body>
+</html>
