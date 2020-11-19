@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Web Font Test</title>
+  <style>
+
+      /* 웹 브라우저에서 폰트를 받아오는 것
+      font-family에 사용할 이름을 지정해주고
+      src로 받아올 폰트의 웹 상 주소를 지정한다.  */
+    @font-face {
+      font-family: "Vera Serif Bold";
+      src: url("http://developer.mozilla.org/@api/deki/files/2934/=VeraSeBd.ttf");
+    }
+
+
+    /* serif : 글자 끝에 꺽어지는 부분 */
+    body { font-family: "Vera Serif Bold", serif }
+  </style>
+</head>
+<body>
+  이것이 모질라에서 제공하는 Vera Serif Bold입니다. 
+</body>
+</html>
